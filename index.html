@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Expense Tracker</title>
+	</head>
+	<body>
+		<h1>Simple Expense Tracker</h1>
+		<form>
+			<div id="date-container">
+				<label for="date">Date: </label>
+				<input type="date" />
+			</div>
+			<div id="expense-container">
+				<label for="Amount">Amount: </label>
+				<input type="text" placeholder="Amount" />
+			</div>
+			<div id="item-container">
+				<label for="">Item: </label>
+				<input type="text" placeholder="What did you buy?" />
+			</div>
+			<div id="location-container">
+				<label for="location">Purchased at:</label>
+				<input type="text" placeholder="Where was purchase made?" />
+			</div>
+			<div id="type-container">
+				<label for="type">Type of Purchase:</label>
+				<select name="type" id="type">
+					<option value="bills">Bills</option>
+					<option value="food">Food</option>
+					<option value="entertainment">entertainment</option>
+					<option value="clothes">Clothes</option>
+					<option value="misc">Misc</option>
+				</select>
+			<div id="payment-type-container">
+				<label for="payment-type">Select a Payment Type:</label>
+				<select name="payment-type" id="payment-type">
+					<option value="credit">Credit</option>
+					<option value="cash">Cash</option>
+					<option value="check">Check</option>
+					<option value="debit">debit</option>
+					<option value="other">other</option>
+				</select>
+			</div>
+		</form>
+		<script src="./script.js"></script>
+	</body>
+</html>
