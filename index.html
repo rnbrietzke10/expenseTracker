@@ -12,19 +12,19 @@
 		<form>
 			<div id="date-container">
 				<label for="date">Date: </label>
-				<input type="date" />
+				<input type="date" id="date" />
 			</div>
 			<div id="expense-container">
-				<label for="Amount">Amount: </label>
-				<input type="text" placeholder="Amount" />
+				<label for="amount">Amount: </label>
+				<input type="text" id="amount" placeholder="Amount" />
 			</div>
 			<div id="item-container">
 				<label for="">Item: </label>
-				<input type="text" placeholder="What did you buy?" />
+				<input type="text" id="item"placeholder="What did you buy?" />
 			</div>
 			<div id="location-container">
 				<label for="location">Purchased at:</label>
-				<input type="text" placeholder="Where was purchase made?" />
+				<input type="text" id="location" placeholder="Where was purchase made?" />
 			</div>
 			<div id="type-container">
 				<label for="type">Type of Purchase:</label>
@@ -41,11 +41,28 @@
 					<option value="credit">Credit</option>
 					<option value="cash">Cash</option>
 					<option value="check">Check</option>
-					<option value="debit">debit</option>
 					<option value="other">other</option>
 				</select>
 			</div>
+			<button id="add-expense">Add Expense</button>
 		</form>
+		<table >
+			<tr>
+				<th>Date</th>
+				<th>Item</th>
+				<th>Purchased At</th>
+				<th>Amount</th>
+				<th>Type</th>
+				<th>Payment Type</th>
+			</tr>
+			<tr>
+				<!-- Want to use to select row to remove expense -->
+				<input type="checkbox" id="select" name="select" value="select">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
 		<script src="./script.js"></script>
 	</body>
 </html>

@@ -2,3 +2,9 @@ body {
 	background-color: #c8b8db;
 	color: #16001e;
 }
+form {
+	width: 100vw;
+	display: flex;
+}
+#date-container {
+}
